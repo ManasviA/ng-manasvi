@@ -1,0 +1,14 @@
+<h1>ma-bar</h1>
+<hr>
+<h4>ma-bar output</h4>
+<ma-bar src="marks" max="100" legend="students"></ma-bar>
+<hr>
+
+<h4>HTML Code (index.html)</h4>
+<div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_html snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_keyword">&lt;ma-bar</span> <span class="sh_type">src</span><span class="sh_symbol">=</span><span class="sh_string">"marks"</span> <span class="sh_type">max</span><span class="sh_symbol">=</span><span class="sh_string">"100"</span> <span class="sh_type">legend</span><span class="sh_symbol">=</span><span class="sh_string">"students"</span><span class="sh_keyword">&gt;&lt;/ma-bar&gt;</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">&lt;mabar src="marks" max="100" legend="students"&gt;&lt;/mabar&gt;
+</pre></div></div>
+<h4>Controller.js</h4>
+<div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_javascript snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_function">controller</span><span class="sh_symbol">(</span><span class="sh_string">'BarDemoCtrl'</span><span class="sh_symbol">,</span> <span class="sh_symbol">[</span><span class="sh_string">'$scope'</span><span class="sh_symbol">,</span><span class="sh_keyword">function</span><span class="sh_symbol">(</span>$scope<span class="sh_symbol">)</span> <span class="sh_cbracket">{</span></li><li>        $scope<span class="sh_symbol">.</span>students <span class="sh_symbol">=</span> <span class="sh_symbol">[</span><span class="sh_string">'Manasvi'</span><span class="sh_symbol">,</span> <span class="sh_string">'Sushrut'</span><span class="sh_symbol">,</span><span class="sh_string">'Jaydeep'</span><span class="sh_symbol">];</span></li><li>        $scope<span class="sh_symbol">.</span>marks <span class="sh_symbol">=</span> <span class="sh_symbol">[</span><span class="sh_number">50</span><span class="sh_symbol">,</span> <span class="sh_number">80</span><span class="sh_symbol">,</span> <span class="sh_number">70</span><span class="sh_symbol">];</span></li><li>    <span class="sh_cbracket">}</span><span class="sh_symbol">]);</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">controller('BarDemoCtrl', ['$scope',function($scope) {
+        $scope.students = ['Manasvi', 'Sushrut','Jaydeep'];
+        $scope.marks = [50, 80, 70];
+    }]);</pre></div></div>

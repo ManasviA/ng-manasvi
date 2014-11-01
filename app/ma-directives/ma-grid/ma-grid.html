@@ -1,0 +1,8 @@
+<table border="1" class="table table-hover">
+    <tr ng-repeat="row in src">
+        <td ng-repeat="col in cols">
+            {{row[col]}}
+        </td>
+    </tr>
+</table>
+<div ng-transclude></div>
