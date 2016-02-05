@@ -1,0 +1,29 @@
+<style>
+    .barwrap
+    {
+        width:200px;
+        background-color:rgba(73, 132, 182,0.05);
+    }
+    .bar
+    {
+        margin:1px;
+        position:relative;
+        background-color:rgba(73, 132, 182,0.1);
+    }
+    .barlength
+    {
+        position:absolute;
+        background-color:rgba(73, 132, 182,0.5);
+    }
+    .bartext
+    {
+        position:absolute;
+    }
+</style>
+<div class="barwrap">
+    <div class="bar" ng-repeat="item in trans">
+        <div class="barlength" style="width:{{item.width}}%;">&nbsp;</div>
+        <div class="bartext">{{item.legend}}</div>
+        <br />
+    </div>
+</div>

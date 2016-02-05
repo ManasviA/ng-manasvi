@@ -1,0 +1,34 @@
+<h1>ma-layout</h1>
+<hr>
+<h4>ma-layout output (when rows=2 and cols=2 in ma-layout)</h4>
+<div style="position:relative; height:370px;">
+    <ma-layout cols="2" rows="2">
+        <ma-pane title="pane1">This is pane 1<span style="color:red;">Inline styles are also applied.</span></ma-pane>
+        <ma-pane title="pane2">hello</ma-pane>
+        <ma-pane title="pane3">Scope variables are accesible. This is value of $scope.bardata = {{bardata}}</ma-pane>
+        <ma-pane title="pane4">Custom directives are also handled well in the layout.Following is ma-list inside this pane.<br/><malist src="userdata"></malist></ma-pane>
+    </ma-layout>
+</div>
+<h4>ma-layout output (when rows=4 and cols=1 in ma-layout)</h4>
+<div style="position:relative; height:370px;">
+    <ma-layout cols="1" rows="4">
+        <ma-pane title="pane1">This is pane 1<span style="color:red;">Inline styles are also applied.</span></ma-pane>
+        <ma-pane title="pane2">hello</ma-pane>
+        <ma-pane title="pane3">Scope variables are accesible. This is value of $scope.bardata = {{bardata}}</ma-pane>
+        <ma-pane title="pane4">Custom directives are also handled well in the layout.Following is ma-list inside this pane.<br/><malist src="userdata"></malist></ma-pane>
+    </ma-layout>
+</div>
+<hr>
+
+<h4>HTML Code (index.html) for 2X2 layout</h4>
+<div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_html snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_keyword">&lt;ma-layout</span> <span class="sh_type">cols</span><span class="sh_symbol">=</span><span class="sh_string">"2"</span> <span class="sh_type">rows</span><span class="sh_symbol">=</span><span class="sh_string">"2"</span><span class="sh_keyword">&gt;</span></li><li>        <span class="sh_keyword">&lt;ma-pane</span> <span class="sh_type">title</span><span class="sh_symbol">=</span><span class="sh_string">"pane1"</span><span class="sh_keyword">&gt;</span>This is pane 1<span class="sh_keyword">&lt;span</span> <span class="sh_type">style</span><span class="sh_symbol">=</span><span class="sh_string">"color:red;"</span><span class="sh_keyword">&gt;</span>Inline styles are also applied.<span class="sh_keyword">&lt;/span&gt;&lt;/ma-pane&gt;</span></li><li>        <span class="sh_keyword">&lt;ma-pane</span> <span class="sh_type">title</span><span class="sh_symbol">=</span><span class="sh_string">"pane2"</span><span class="sh_keyword">&gt;</span>hello<span class="sh_keyword">&lt;/ma-pane&gt;</span></li><li>        <span class="sh_keyword">&lt;ma-pane</span> <span class="sh_type">title</span><span class="sh_symbol">=</span><span class="sh_string">"pane3"</span><span class="sh_keyword">&gt;</span>Scope variables are accesible. This is value of $scope.bardata = <span ng-non-bindable> {{bardata}}</span><span class="sh_keyword">&lt;/ma-pane&gt;</span></li><li>        <span class="sh_keyword">&lt;ma-pane</span> <span class="sh_type">title</span><span class="sh_symbol">=</span><span class="sh_string">"pane4"</span><span class="sh_keyword">&gt;</span>Custom directives are also handled well in the layout.Following is ma-list inside this pane.<span class="sh_keyword">&lt;br/&gt;&lt;malist</span> <span class="sh_type">src</span><span class="sh_symbol">=</span><span class="sh_string">"userdata"</span><span class="sh_keyword">&gt;&lt;/malist&gt;&lt;/ma-pane&gt;</span></li><li>    <span class="sh_keyword">&lt;/ma-layout&gt;</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">&lt;ma-layout cols="2" rows="2"&gt;
+        &lt;ma-pane title="pane1"&gt;This is pane 1&lt;span style="color:red;"&gt;Inline styles are also applied.&lt;/span&gt;&lt;/ma-pane&gt;
+        &lt;ma-pane title="pane2"&gt;hello&lt;/ma-pane&gt;
+        &lt;ma-pane title="pane3"&gt;Scope variables are accesible. This is value of $scope.bardata = {{bardata}}&lt;/ma-pane&gt;
+        &lt;ma-pane title="pane4"&gt;Custom directives are also handled well in the layout.Following is ma-list inside this pane.&lt;br/&gt;&lt;malist src="userdata"&gt;&lt;/malist&gt;&lt;/ma-pane&gt;
+    &lt;/ma-layout&gt;</pre></div></div>
+<h4>Controller.js</h4>
+<div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_javascript snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_function">controller</span><span class="sh_symbol">(</span><span class="sh_string">'LayoutDemoCtrl'</span><span class="sh_symbol">,</span> <span class="sh_symbol">[</span><span class="sh_string">'$scope'</span><span class="sh_symbol">,</span><span class="sh_keyword">function</span><span class="sh_symbol">(</span>$scope<span class="sh_symbol">)</span> <span class="sh_cbracket">{</span></li><li>        $scope<span class="sh_symbol">.</span>userdata <span class="sh_symbol">=</span> <span class="sh_symbol">[</span><span class="sh_string">'Manasvi'</span><span class="sh_symbol">,</span> <span class="sh_string">'Sushrut'</span><span class="sh_symbol">,</span><span class="sh_string">'Jaydeep'</span><span class="sh_symbol">];</span></li><li>        $scope<span class="sh_symbol">.</span>bardata <span class="sh_symbol">=</span> <span class="sh_symbol">[</span><span class="sh_number">50</span><span class="sh_symbol">,</span> <span class="sh_number">80</span><span class="sh_symbol">,</span> <span class="sh_number">70</span><span class="sh_symbol">];</span></li><li>    <span class="sh_cbracket">}</span><span class="sh_symbol">]);</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">controller('LayoutDemoCtrl', ['$scope',function($scope) {
+        $scope.userdata = ['Manasvi', 'Sushrut','Jaydeep'];
+        $scope.bardata = [50, 80, 70];
+    }]);</pre></div></div>
